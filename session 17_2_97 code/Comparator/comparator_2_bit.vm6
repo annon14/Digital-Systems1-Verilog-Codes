@@ -1,0 +1,475 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500xl | 95288XL144 | XC95288XL-6-TQ144
+
+DEVICE | 95288XL | 95288XL144 | 
+
+NETWORK | comparator_2_bit | 0 | 0 | 16391
+
+INPUT_INSTANCE | 0 | 0 | NULL | A_0_IBUF | comparator_2_bit_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<0> | 375 | PI | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | B_0_IBUF | comparator_2_bit_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | B<0> | 376 | PI | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A_1_IBUF | comparator_2_bit_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<1> | 377 | PI | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | B_1_IBUF | comparator_2_bit_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | B<1> | 378 | PI | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | OptxMapped | o_4_OBUF | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_4_OBUF$Q | 349 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_4_OBUF.Q | o_4_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_4_OBUF.SI | o_4_OBUF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_4_OBUF.D1 | 380 | ? | 0 | 4096 | o_4_OBUF | NULL | NULL | o_4_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_4_OBUF.D2 | 381 | ? | 0 | 4096 | o_4_OBUF | NULL | NULL | o_4_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | A_1_IBUF | IV_TRUE | B_1_IBUF
+SPPTERM | 3 | IV_FALSE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_FALSE | A_1_IBUF
+SPPTERM | 3 | IV_FALSE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_TRUE | B_1_IBUF
+
+SRFF_INSTANCE | o_4_OBUF.REG | o_4_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_4_OBUF.D | 379 | ? | 0 | 0 | o_4_OBUF | NULL | NULL | o_4_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_4_OBUF.Q | 382 | ? | 0 | 0 | o_4_OBUF | NULL | NULL | o_4_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | o_5_OBUF | comparator_2_bit_COPY_0_COPY_0 | 2155872512 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_5_OBUF | 352 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_5_OBUF.Q | o_5_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_5_OBUF.SI | o_5_OBUF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_5_OBUF.D1 | 384 | ? | 0 | 4096 | o_5_OBUF | NULL | NULL | o_5_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_5_OBUF.D2 | 385 | ? | 0 | 4096 | o_5_OBUF | NULL | NULL | o_5_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_TRUE | A_1_IBUF | IV_TRUE | B_1_IBUF
+SPPTERM | 4 | IV_TRUE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_FALSE | A_1_IBUF | IV_FALSE | B_1_IBUF
+SPPTERM | 4 | IV_FALSE | A_0_IBUF | IV_FALSE | B_0_IBUF | IV_TRUE | A_1_IBUF | IV_TRUE | B_1_IBUF
+SPPTERM | 4 | IV_FALSE | A_0_IBUF | IV_FALSE | B_0_IBUF | IV_FALSE | A_1_IBUF | IV_FALSE | B_1_IBUF
+
+SRFF_INSTANCE | o_5_OBUF.REG | o_5_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_5_OBUF.D | 383 | ? | 0 | 0 | o_5_OBUF | NULL | NULL | o_5_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_5_OBUF.Q | 386 | ? | 0 | 0 | o_5_OBUF | NULL | NULL | o_5_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | o_7_OBUF | comparator_2_bit_COPY_0_COPY_0 | 2155872512 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_7_OBUF | 353 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_7_OBUF.Q | o_7_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_7_OBUF.SI | o_7_OBUF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_7_OBUF.D1 | 388 | ? | 0 | 4096 | o_7_OBUF | NULL | NULL | o_7_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_7_OBUF.D2 | 389 | ? | 0 | 4096 | o_7_OBUF | NULL | NULL | o_7_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | A_1_IBUF | IV_TRUE | B_1_IBUF
+SPPTERM | 3 | IV_FALSE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_FALSE | A_1_IBUF
+SPPTERM | 3 | IV_FALSE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_TRUE | B_1_IBUF
+
+SRFF_INSTANCE | o_7_OBUF.REG | o_7_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_7_OBUF.D | 387 | ? | 0 | 0 | o_7_OBUF | NULL | NULL | o_7_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_7_OBUF.Q | 390 | ? | 0 | 0 | o_7_OBUF | NULL | NULL | o_7_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | o_1_OBUF | comparator_2_bit_COPY_0_COPY_0 | 2155872512 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_1_OBUF | 354 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_1_OBUF.Q | o_1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_1_OBUF.SI | o_1_OBUF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_1_OBUF.D1 | 392 | ? | 0 | 4096 | o_1_OBUF | NULL | NULL | o_1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_1_OBUF.D2 | 393 | ? | 0 | 4096 | o_1_OBUF | NULL | NULL | o_1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | A_1_IBUF | IV_FALSE | B_1_IBUF
+SPPTERM | 3 | IV_TRUE | A_0_IBUF | IV_FALSE | B_0_IBUF | IV_TRUE | A_1_IBUF
+SPPTERM | 3 | IV_TRUE | A_0_IBUF | IV_FALSE | B_0_IBUF | IV_FALSE | B_1_IBUF
+
+SRFF_INSTANCE | o_1_OBUF.REG | o_1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_1_OBUF.D | 391 | ? | 0 | 0 | o_1_OBUF | NULL | NULL | o_1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_1_OBUF.Q | 394 | ? | 0 | 0 | o_1_OBUF | NULL | NULL | o_1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | o_4_OBUF$BUF0 | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_4_OBUF$BUF0 | 355 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_4_OBUF$BUF0.Q | o_4_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_4_OBUF$BUF0.SI | o_4_OBUF$BUF0 | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_1_IBUF | 350 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_1_IBUF | 351 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_0_IBUF | 347 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | A_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_0_IBUF | 348 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | B_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_4_OBUF$BUF0.D1 | 396 | ? | 0 | 4096 | o_4_OBUF$BUF0 | NULL | NULL | o_4_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_4_OBUF$BUF0.D2 | 397 | ? | 0 | 4096 | o_4_OBUF$BUF0 | NULL | NULL | o_4_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | A_1_IBUF | IV_TRUE | B_1_IBUF
+SPPTERM | 3 | IV_FALSE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_FALSE | A_1_IBUF
+SPPTERM | 3 | IV_FALSE | A_0_IBUF | IV_TRUE | B_0_IBUF | IV_TRUE | B_1_IBUF
+
+SRFF_INSTANCE | o_4_OBUF$BUF0.REG | o_4_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_4_OBUF$BUF0.D | 395 | ? | 0 | 0 | o_4_OBUF$BUF0 | NULL | NULL | o_4_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_4_OBUF$BUF0.Q | 398 | ? | 0 | 0 | o_4_OBUF$BUF0 | NULL | NULL | o_4_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | o_0_OBUF | comparator_2_bit_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_0_OBUF$Q | 356 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF.Q | o_0_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_0_OBUF.SI | o_0_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_0_OBUF.D1 | 400 | ? | 0 | 4096 | o_0_OBUF | NULL | NULL | o_0_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_0_OBUF.D2 | 401 | ? | 0 | 4096 | o_0_OBUF | NULL | NULL | o_0_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o_0_OBUF.REG | o_0_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_0_OBUF.D | 399 | ? | 0 | 0 | o_0_OBUF | NULL | NULL | o_0_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_0_OBUF.Q | 402 | ? | 0 | 0 | o_0_OBUF | NULL | NULL | o_0_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | o_0_OBUF$BUF0 | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_0_OBUF$BUF0 | 357 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF0.Q | o_0_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_0_OBUF$BUF0.SI | o_0_OBUF$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_0_OBUF$BUF0.D1 | 404 | ? | 0 | 4096 | o_0_OBUF$BUF0 | NULL | NULL | o_0_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_0_OBUF$BUF0.D2 | 405 | ? | 0 | 6144 | o_0_OBUF$BUF0 | NULL | NULL | o_0_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o_0_OBUF$BUF0.REG | o_0_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_0_OBUF$BUF0.D | 403 | ? | 0 | 0 | o_0_OBUF$BUF0 | NULL | NULL | o_0_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_0_OBUF$BUF0.Q | 406 | ? | 0 | 0 | o_0_OBUF$BUF0 | NULL | NULL | o_0_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | o_0_OBUF$BUF1 | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_0_OBUF$BUF1 | 358 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF1.Q | o_0_OBUF$BUF1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_0_OBUF$BUF1.SI | o_0_OBUF$BUF1 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_0_OBUF$BUF1.D1 | 408 | ? | 0 | 4096 | o_0_OBUF$BUF1 | NULL | NULL | o_0_OBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_0_OBUF$BUF1.D2 | 409 | ? | 0 | 6144 | o_0_OBUF$BUF1 | NULL | NULL | o_0_OBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o_0_OBUF$BUF1.REG | o_0_OBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_0_OBUF$BUF1.D | 407 | ? | 0 | 0 | o_0_OBUF$BUF1 | NULL | NULL | o_0_OBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_0_OBUF$BUF1.Q | 410 | ? | 0 | 0 | o_0_OBUF$BUF1 | NULL | NULL | o_0_OBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | o_0_OBUF$BUF2 | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_0_OBUF$BUF2 | 359 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF2.Q | o_0_OBUF$BUF2 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_0_OBUF$BUF2.SI | o_0_OBUF$BUF2 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_0_OBUF$BUF2.D1 | 412 | ? | 0 | 4096 | o_0_OBUF$BUF2 | NULL | NULL | o_0_OBUF$BUF2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_0_OBUF$BUF2.D2 | 413 | ? | 0 | 6144 | o_0_OBUF$BUF2 | NULL | NULL | o_0_OBUF$BUF2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o_0_OBUF$BUF2.REG | o_0_OBUF$BUF2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_0_OBUF$BUF2.D | 411 | ? | 0 | 0 | o_0_OBUF$BUF2 | NULL | NULL | o_0_OBUF$BUF2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_0_OBUF$BUF2.Q | 414 | ? | 0 | 0 | o_0_OBUF$BUF2 | NULL | NULL | o_0_OBUF$BUF2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | o_0_OBUF$BUF3 | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_0_OBUF$BUF3 | 360 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF3.Q | o_0_OBUF$BUF3 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_0_OBUF$BUF3.SI | o_0_OBUF$BUF3 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_0_OBUF$BUF3.D1 | 416 | ? | 0 | 4096 | o_0_OBUF$BUF3 | NULL | NULL | o_0_OBUF$BUF3.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_0_OBUF$BUF3.D2 | 417 | ? | 0 | 6144 | o_0_OBUF$BUF3 | NULL | NULL | o_0_OBUF$BUF3.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o_0_OBUF$BUF3.REG | o_0_OBUF$BUF3 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_0_OBUF$BUF3.D | 415 | ? | 0 | 0 | o_0_OBUF$BUF3 | NULL | NULL | o_0_OBUF$BUF3.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_0_OBUF$BUF3.Q | 418 | ? | 0 | 0 | o_0_OBUF$BUF3 | NULL | NULL | o_0_OBUF$BUF3.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | o_0_OBUF$BUF4 | comparator_2_bit_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_0_OBUF$BUF4 | 361 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF4.Q | o_0_OBUF$BUF4 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_0_OBUF$BUF4.SI | o_0_OBUF$BUF4 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_0_OBUF$BUF4.D1 | 420 | ? | 0 | 4096 | o_0_OBUF$BUF4 | NULL | NULL | o_0_OBUF$BUF4.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_0_OBUF$BUF4.D2 | 421 | ? | 0 | 6144 | o_0_OBUF$BUF4 | NULL | NULL | o_0_OBUF$BUF4.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o_0_OBUF$BUF4.REG | o_0_OBUF$BUF4 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_0_OBUF$BUF4.D | 419 | ? | 0 | 0 | o_0_OBUF$BUF4 | NULL | NULL | o_0_OBUF$BUF4.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_0_OBUF$BUF4.Q | 422 | ? | 0 | 0 | o_0_OBUF$BUF4 | NULL | NULL | o_0_OBUF$BUF4.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | o_6_OBUF | comparator_2_bit_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_6_OBUF | 362 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_6_OBUF.Q | o_6_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o_6_OBUF.SI | o_6_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_6_OBUF.D1 | 424 | ? | 0 | 4096 | o_6_OBUF | NULL | NULL | o_6_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_6_OBUF.D2 | 425 | ? | 0 | 4096 | o_6_OBUF | NULL | NULL | o_6_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+
+SRFF_INSTANCE | o_6_OBUF.REG | o_6_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_6_OBUF.D | 423 | ? | 0 | 0 | o_6_OBUF | NULL | NULL | o_6_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_6_OBUF.Q | 426 | ? | 0 | 0 | o_6_OBUF | NULL | NULL | o_6_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | o<4> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_4_OBUF$Q | 349 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_4_OBUF.Q | o_4_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<4> | 363 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<5> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_5_OBUF | 352 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_5_OBUF.Q | o_5_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<5> | 364 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<7> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_7_OBUF | 353 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_7_OBUF.Q | o_7_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<7> | 365 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<1> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_1_OBUF | 354 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_1_OBUF.Q | o_1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<1> | 366 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<3> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_4_OBUF$BUF0 | 355 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_4_OBUF$BUF0.Q | o_4_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<3> | 367 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<2> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_0_OBUF$Q | 356 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF.Q | o_0_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<2> | 368 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<0> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_0_OBUF$BUF0 | 357 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF0.Q | o_0_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<0> | 369 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | C<3> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_0_OBUF$BUF1 | 358 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF1.Q | o_0_OBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | C<3> | 370 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | C<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | C<2> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_0_OBUF$BUF2 | 359 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF2.Q | o_0_OBUF$BUF2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | C<2> | 371 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | C<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | C<1> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_0_OBUF$BUF3 | 360 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF3.Q | o_0_OBUF$BUF3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | C<1> | 372 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | C<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | C<0> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_0_OBUF$BUF4 | 361 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_0_OBUF$BUF4.Q | o_0_OBUF$BUF4 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | C<0> | 373 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | C<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | o<6> | comparator_2_bit_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_6_OBUF | 362 | ? | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | o_6_OBUF.Q | o_6_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o<6> | 374 | PO | 0 | 0 | comparator_2_bit_COPY_0_COPY_0 | NULL | NULL | o<6> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR2_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 8 | o_0_OBUF | 1 | NULL | 0 | o<2> | 1 | 38 | 57344
+FBPIN | 10 | o_1_OBUF | 1 | NULL | 0 | o<1> | 1 | 39 | 49152
+FBPIN | 14 | o_0_OBUF$BUF0 | 1 | NULL | 0 | o<0> | 1 | 41 | 49152
+FBPIN | 15 | o_5_OBUF | 1 | NULL | 0 | o<5> | 1 | 43 | 49152
+FBPIN | 17 | o_4_OBUF | 1 | NULL | 0 | o<4> | 1 | 44 | 49152
+
+FB_INSTANCE | FOOBAR6_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 5 | o_4_OBUF$BUF0 | 1 | NULL | 0 | o<3> | 1 | 46 | 49152
+FBPIN | 12 | o_7_OBUF | 1 | NULL | 0 | o<7> | 1 | 48 | 49152
+FBPIN | 15 | o_0_OBUF$BUF4 | 1 | NULL | 0 | C<0> | 1 | 49 | 49152
+
+FB_INSTANCE | FOOBAR8_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | o_6_OBUF | 1 | NULL | 0 | o<6> | 1 | 50 | 49152
+FBPIN | 3 | o_0_OBUF$BUF3 | 1 | NULL | 0 | C<1> | 1 | 51 | 49152
+FBPIN | 6 | o_0_OBUF$BUF2 | 1 | NULL | 0 | C<2> | 1 | 53 | 49152
+FBPIN | 17 | o_0_OBUF$BUF1 | 1 | NULL | 0 | C<3> | 1 | 59 | 49152
+
+FB_INSTANCE | FOOBAR10_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | NULL | 0 | B_1_IBUF | 1 | NULL | 0 | 120 | 49152
+
+FB_INSTANCE | FOOBAR11_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 12 | NULL | 0 | B_0_IBUF | 1 | NULL | 0 | 116 | 49152
+
+FB_INSTANCE | FOOBAR13_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | NULL | 0 | A_1_IBUF | 1 | NULL | 0 | 100 | 49152
+
+FB_INSTANCE | FOOBAR15_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 11 | NULL | 0 | A_0_IBUF | 1 | NULL | 0 | 97 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | comparator_2_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | A<1:0> | 2 | 0 | 0 | A<0> | 1 | A<1> | 0
+BUSINFO | B<1:0> | 2 | 0 | 0 | B<0> | 1 | B<1> | 0
+BUSINFO | C<3:0> | 4 | 0 | 1 | C<0> | 3 | C<1> | 2 | C<2> | 1 | C<3> | 0
+BUSINFO | O<7:0> | 8 | 0 | 1 | o<0> | 7 | o<1> | 6 | o<2> | 5 | o<3> | 4 | o<4> | 3 | o<5> | 2 | o<6> | 1 | o<7> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR5_ | 0 | B<1> | 120 | 1 | A<1> | 100 | 13 | A<0> | 97 | 14 | B<0> | 116
+
+FB_IMUX_INDEX | FOOBAR5_ | 305 | 357 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 369 | 319 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR7_ | 0 | B<1> | 120 | 1 | A<1> | 100 | 13 | A<0> | 97 | 14 | B<0> | 116
+
+FB_IMUX_INDEX | FOOBAR7_ | 305 | 357 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 369 | 319 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+

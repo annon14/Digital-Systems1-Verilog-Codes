@@ -1,0 +1,7 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/T_FF/T_FF/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF.xst" -ofn "D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -i -p xc95288xl-TQ144-6 T_FF.ngc T_FF.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/T_FF/T_FF/iseconfig/filter.filter -intstyle ise -p xc95288xl-6-TQ144 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper T_FF.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/T_FF/T_FF/iseconfig/filter.filter T_FF_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/T_FF/T_FF/iseconfig/filter.filter -intstyle ise T_FF T_FF.nga 
+taengine -intstyle ise -f T_FF -w --format html1 -l T_FF_html/tim/timing_report.htm 
+hprep6 -filter D:/Homeworks/FPGA_codes/T_FF/T_FF/iseconfig/filter.filter -s IEEE1149 -n T_FF -i T_FF 

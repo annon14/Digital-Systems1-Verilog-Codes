@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_16_tb_isim_par.exe" -prj "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_16_tb_par.prj" "work.RAM_16_tb" "work.glbl" 

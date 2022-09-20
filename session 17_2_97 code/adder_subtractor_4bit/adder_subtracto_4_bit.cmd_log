@@ -1,0 +1,21 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.xst" -ofn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.xst" -ofn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.xst" -ofn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -i -p xc9572-PC44-7 adder_subtracto_4_bit.ngc adder_subtracto_4_bit.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk adder_subtracto_4_bit.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter adder_subtracto_4_bit_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise adder_subtracto_4_bit adder_subtracto_4_bit.nga 
+taengine -intstyle ise -f adder_subtracto_4_bit -w --format html1 -l adder_subtracto_4_bit_html/tim/timing_report.htm 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.xst" -ofn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -i -p xc9572-PC44-7 adder_subtracto_4_bit.ngc adder_subtracto_4_bit.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk adder_subtracto_4_bit.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter adder_subtracto_4_bit_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise adder_subtracto_4_bit adder_subtracto_4_bit.nga 
+hprep6 -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -s IEEE1149 -n adder_subtracto_4_bit -i adder_subtracto_4_bit 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.xst" -ofn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/adder_subtracto_4_bit.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -i -p xc9572-PC44-7 adder_subtracto_4_bit.ngc adder_subtracto_4_bit.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk adder_subtracto_4_bit.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter adder_subtracto_4_bit_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise adder_subtracto_4_bit adder_subtracto_4_bit.nga 
+hprep6 -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -s IEEE1149 -n adder_subtracto_4_bit -i adder_subtracto_4_bit 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter adder_subtracto_4_bit_build.xml 

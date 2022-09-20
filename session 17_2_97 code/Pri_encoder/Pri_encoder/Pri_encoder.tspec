@@ -1,0 +1,8 @@
+AUTO_TS_F2P:FROM:Mtrien_binary_out.Q:TO:binary_out<1>:1
+AUTO_TS_F2P:FROM:Mtrien_binary_out.Q:TO:binary_out<0>:1
+AUTO_TS_P2F:FROM:enable:TO:Mtrien_binary_out.SETF:1
+AUTO_TS_P2F:FROM:enable:TO:Mtrien_binary_out.RSTF:1
+AUTO_TS_P2F:FROM:encoder_in<0>:TO:Mtrien_binary_out.RSTF:1
+AUTO_TS_P2F:FROM:encoder_in<1>:TO:Mtrien_binary_out.RSTF:1
+AUTO_TS_P2F:FROM:encoder_in<2>:TO:Mtrien_binary_out.RSTF:1
+AUTO_TS_P2F:FROM:encoder_in<3>:TO:Mtrien_binary_out.RSTF:1

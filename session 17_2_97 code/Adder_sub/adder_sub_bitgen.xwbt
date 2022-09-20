@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Saeid\Desktop\Digital_system1\17_2_97 session code\Adder_sub\adder_sub.ncd
+OUTFILE=C:\Users\Saeid\Desktop\Digital_system1\17_2_97 session code\Adder_sub\adder_sub.bit
+FAMILY=Spartan3
+PART=xc3s200-5pq208
+WORKINGDIR=C:\Users\Saeid\Desktop\Digital_system1\17_2_97 session code\Adder_sub
+LICENSE=WebPack
+USER_INFO=__0_0_0

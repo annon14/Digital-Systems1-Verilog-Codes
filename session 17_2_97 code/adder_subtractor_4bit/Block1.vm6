@@ -1,0 +1,167 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500 | 957244 | XC9572-7-PC44
+
+DEVICE | 9572 | 957244 | 
+
+NETWORK | Block1 | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | Block1_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 113 | PI | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 102 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_IBUF | Block1_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 114 | PI | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | reset_IBUF | 103 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | In_IBUF | Block1_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | In | 115 | PI | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | In_IBUF | 104 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | In_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | ro<0> | Block1_COPY_0_COPY_0 | 2155873280 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_IBUF | 103 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | In_IBUF | 104 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | In_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 102 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ro<0> | 105 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | ro<0>.Q | ro<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ro<0>.UIM | 132 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | ro<0>.Q | ro<0> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ro<0>.SI | ro<0> | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_IBUF | 103 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | In_IBUF | 104 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | In_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ro<0>.D1 | 117 | ? | 0 | 4096 | ro<0> | NULL | NULL | ro<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ro<0>.D2 | 118 | ? | 0 | 4096 | ro<0> | NULL | NULL | ro<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | reset_IBUF | IV_TRUE | In_IBUF
+
+SRFF_INSTANCE | ro<0>.REG | ro<0> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ro<0>.D | 116 | ? | 0 | 0 | ro<0> | NULL | NULL | ro<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 102 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ro<0>.Q | 119 | ? | 0 | 0 | ro<0> | NULL | NULL | ro<0>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | Madd_ro_add0000__and0000 | Block1_COPY_0_COPY_0 | 2155907072 | 0 | 2
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Madd_ro_add0000__and0000$Q | 106 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000.Q | Madd_ro_add0000__and0000 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Madd_ro_add0000__and0000.UIM | 133 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000.Q | Madd_ro_add0000__and0000 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Madd_ro_add0000__and0000.SI | Madd_ro_add0000__and0000 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Madd_ro_add0000__and0000.D1 | 121 | ? | 0 | 4096 | Madd_ro_add0000__and0000 | NULL | NULL | Madd_ro_add0000__and0000.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Madd_ro_add0000__and0000.D2 | 122 | ? | 0 | 4096 | Madd_ro_add0000__and0000 | NULL | NULL | Madd_ro_add0000__and0000.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Madd_ro_add0000__and0000.REG | Madd_ro_add0000__and0000 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Madd_ro_add0000__and0000.D | 120 | ? | 0 | 0 | Madd_ro_add0000__and0000 | NULL | NULL | Madd_ro_add0000__and0000.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Madd_ro_add0000__and0000.Q | 123 | ? | 0 | 0 | Madd_ro_add0000__and0000 | NULL | NULL | Madd_ro_add0000__and0000.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Madd_ro_add0000__and0000$BUF0 | Block1_COPY_0_COPY_0 | 2155872256 | 0 | 2
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Madd_ro_add0000__and0000$BUF0 | 107 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000$BUF0.Q | Madd_ro_add0000__and0000$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Madd_ro_add0000__and0000$BUF0.UIM | 134 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000$BUF0.Q | Madd_ro_add0000__and0000$BUF0 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Madd_ro_add0000__and0000$BUF0.SI | Madd_ro_add0000__and0000$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Madd_ro_add0000__and0000$BUF0.D1 | 125 | ? | 0 | 4096 | Madd_ro_add0000__and0000$BUF0 | NULL | NULL | Madd_ro_add0000__and0000$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Madd_ro_add0000__and0000$BUF0.D2 | 126 | ? | 0 | 6144 | Madd_ro_add0000__and0000$BUF0 | NULL | NULL | Madd_ro_add0000__and0000$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Madd_ro_add0000__and0000$BUF0.REG | Madd_ro_add0000__and0000$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Madd_ro_add0000__and0000$BUF0.D | 124 | ? | 0 | 0 | Madd_ro_add0000__and0000$BUF0 | NULL | NULL | Madd_ro_add0000__and0000$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Madd_ro_add0000__and0000$BUF0.Q | 127 | ? | 0 | 0 | Madd_ro_add0000__and0000$BUF0 | NULL | NULL | Madd_ro_add0000__and0000$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Madd_ro_add0000__and0000$BUF1 | Block1_COPY_0_COPY_0 | 2155872256 | 0 | 2
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Madd_ro_add0000__and0000$BUF1 | 108 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000$BUF1.Q | Madd_ro_add0000__and0000$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Madd_ro_add0000__and0000$BUF1.UIM | 135 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000$BUF1.Q | Madd_ro_add0000__and0000$BUF1 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Madd_ro_add0000__and0000$BUF1.SI | Madd_ro_add0000__and0000$BUF1 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Madd_ro_add0000__and0000$BUF1.D1 | 129 | ? | 0 | 4096 | Madd_ro_add0000__and0000$BUF1 | NULL | NULL | Madd_ro_add0000__and0000$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Madd_ro_add0000__and0000$BUF1.D2 | 130 | ? | 0 | 6144 | Madd_ro_add0000__and0000$BUF1 | NULL | NULL | Madd_ro_add0000__and0000$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Madd_ro_add0000__and0000$BUF1.REG | Madd_ro_add0000__and0000$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Madd_ro_add0000__and0000$BUF1.D | 128 | ? | 0 | 0 | Madd_ro_add0000__and0000$BUF1 | NULL | NULL | Madd_ro_add0000__and0000$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Madd_ro_add0000__and0000$BUF1.Q | 131 | ? | 0 | 0 | Madd_ro_add0000__and0000$BUF1 | NULL | NULL | Madd_ro_add0000__and0000$BUF1.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Out<0> | Block1_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ro<0> | 105 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | ro<0>.Q | ro<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Out<0> | 109 | PO | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | Out<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Out<3> | Block1_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Madd_ro_add0000__and0000$Q | 106 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000.Q | Madd_ro_add0000__and0000 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Out<3> | 110 | PO | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | Out<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Out<2> | Block1_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Madd_ro_add0000__and0000$BUF0 | 107 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000$BUF0.Q | Madd_ro_add0000__and0000$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Out<2> | 111 | PO | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | Out<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Out<1> | Block1_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Madd_ro_add0000__and0000$BUF1 | 108 | ? | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | Madd_ro_add0000__and0000$BUF1.Q | Madd_ro_add0000__and0000$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Out<1> | 112 | PO | 0 | 0 | Block1_COPY_0_COPY_0 | NULL | NULL | Out<1> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | Block1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | ro<0> | 1 | NULL | 0 | Out<0> | 1 | 1 | 49152
+FBPIN | 9 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 5 | 57344
+
+FB_INSTANCE | FOOBAR2_ | Block1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Madd_ro_add0000__and0000$BUF1 | 1 | NULL | 0 | Out<1> | 1 | 35 | 49152
+FBPIN | 8 | NULL | 0 | reset_IBUF | 1 | NULL | 0 | 38 | 49152
+FBPIN | 15 | NULL | 0 | In_IBUF | 1 | NULL | 0 | 43 | 49152
+
+FB_INSTANCE | FOOBAR3_ | Block1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Madd_ro_add0000__and0000$BUF0 | 1 | NULL | 0 | Out<2> | 1 | 11 | 49152
+
+FB_INSTANCE | FOOBAR4_ | Block1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Madd_ro_add0000__and0000 | 1 | NULL | 0 | Out<3> | 1 | 24 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | Block1_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | OUT<3:0> | 4 | 0 | 1 | Out<0> | 3 | Out<1> | 2 | Out<2> | 1 | Out<3> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 19 | reset | 38 | 22 | In | 43
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 73 | -1 | -1 | 76 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | FCLKIO_0 | 0 | 0

@@ -1,0 +1,48 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Saeid/Desktop/Digital_system1/7_3_97_Session Code/6.Extra_code/FIFO/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Saeid/Desktop/Digital_system1/7_3_97_Session Code/6.Extra_code/FIFO/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "FIFO.v" in library work
+ERROR:HDLCompilers:26 - "FIFO.v" line 39 unexpected token: 'FIFO1'
+ERROR:HDLCompilers:26 - "FIFO.v" line 40 unexpected token: '.'
+ERROR:HDLCompilers:26 - "FIFO.v" line 40 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 41 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 42 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 43 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 44 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 45 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 47 expecting ';', found ')'
+ERROR:HDLCompilers:26 - "FIFO.v" line 58 unexpected token: 'FIFO1'
+ERROR:HDLCompilers:26 - "FIFO.v" line 59 unexpected token: '.'
+ERROR:HDLCompilers:26 - "FIFO.v" line 59 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 60 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 61 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 62 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 63 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 64 expecting ';', found ','
+ERROR:HDLCompilers:26 - "FIFO.v" line 66 expecting ';', found ')'
+Module <FIFO> compiled
+Analysis of file <"FIFO.prj"> failed.
+--> 
+
+Total memory usage is 260888 kilobytes
+
+Number of errors   :   18 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,14 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF_tb_isim_beh.exe -prj D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF_tb_beh.prj work.D_FF_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF.v" into library work
+Analyzing Verilog file "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF_tb.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module D_FF
+Compiling module D_FF_tb
+WARNING:Simulator:918 - "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF_tb.v" Line 44. System function $fopen is used as system task. This system function should have a LHS e.g. x=$fopen()
+ERROR:Simulator:754 - Signal EXCEPTION_ACCESS_VIOLATION received

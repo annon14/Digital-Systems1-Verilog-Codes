@@ -1,0 +1,3 @@
+verilog work "frequence_measure.v"
+verilog work "Edge_Detector.v"
+verilog work "Frequence_Meter.v"

@@ -1,0 +1,5 @@
+set -tmpdir "D:/Homeworks/FPGA_codes/D_FF/state_machin/xst/projnav.tmp"
+set -xsthdpdir "D:/Homeworks/FPGA_codes/D_FF/state_machin/xst"
+elaborate
+-ifn state_machine.prj
+-ifmt mixed

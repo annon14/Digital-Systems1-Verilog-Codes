@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 30 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 30 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 34 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 34 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 36 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 36 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 38 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 38 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 40 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 40 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 42 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 42 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 44 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 44 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 46 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 46 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 48 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;o&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;jnjnjk.v&quot; line 48 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+</messages>
+

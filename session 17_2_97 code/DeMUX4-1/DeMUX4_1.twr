@@ -1,0 +1,209 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml DeMUX4_1.twx DeMUX4_1.ncd -o DeMUX4_1.twr DeMUX4_1.pcf
+
+Design file:              DeMUX4_1.ncd
+Physical constraint file: DeMUX4_1.pcf
+Device,package,speed:     xc3s200,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock S<0>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+A<0>        |   -1.893(F)|    4.013(F)|Out1_not0001      |   0.000|
+            |   -2.511(F)|    4.575(F)|Out2_cmp_eq0000   |   0.000|
+            |    0.041(F)|    2.884(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.158(F)|    3.133(F)|Out4_cmp_eq0000   |   0.000|
+A<1>        |   -0.302(F)|    2.711(F)|Out1_not0001      |   0.000|
+            |   -2.894(F)|    4.879(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.059(F)|    3.010(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.552(F)|    3.626(F)|Out4_cmp_eq0000   |   0.000|
+A<2>        |   -2.817(F)|    4.772(F)|Out1_not0001      |   0.000|
+            |   -2.734(F)|    4.812(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.089(F)|    3.047(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.581(F)|    3.662(F)|Out4_cmp_eq0000   |   0.000|
+A<3>        |   -2.484(F)|    4.536(F)|Out1_not0001      |   0.000|
+            |   -2.972(F)|    4.962(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.226(F)|    3.219(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.170(F)|    3.149(F)|Out4_cmp_eq0000   |   0.000|
+A<4>        |   -0.185(F)|    2.673(F)|Out1_not0001      |   0.000|
+            |   -2.450(F)|    4.579(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.030(F)|    2.973(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.522(F)|    3.588(F)|Out4_cmp_eq0000   |   0.000|
+A<5>        |   -0.346(F)|    2.754(F)|Out1_not0001      |   0.000|
+            |   -2.919(F)|    4.899(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.059(F)|    3.010(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.552(F)|    3.626(F)|Out4_cmp_eq0000   |   0.000|
+A<6>        |    0.435(F)|    2.124(F)|Out1_not0001      |   0.000|
+            |   -3.047(F)|    5.063(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.097(F)|    3.058(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.594(F)|    3.679(F)|Out4_cmp_eq0000   |   0.000|
+A<7>        |   -0.371(F)|    2.827(F)|Out1_not0001      |   0.000|
+            |   -0.318(F)|    3.333(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.184(F)|    3.167(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.625(F)|    3.419(F)|Out4_cmp_eq0000   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock S<1>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+A<0>        |   -2.300(F)|    4.522(F)|Out1_not0001      |   0.000|
+            |   -2.974(F)|    5.154(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.363(F)|    3.388(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.537(F)|    3.607(F)|Out4_cmp_eq0000   |   0.000|
+A<1>        |   -0.709(F)|    3.220(F)|Out1_not0001      |   0.000|
+            |   -3.357(F)|    5.458(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.463(F)|    3.514(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.931(F)|    4.100(F)|Out4_cmp_eq0000   |   0.000|
+A<2>        |   -3.224(F)|    5.281(F)|Out1_not0001      |   0.000|
+            |   -3.197(F)|    5.391(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.493(F)|    3.551(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.960(F)|    4.136(F)|Out4_cmp_eq0000   |   0.000|
+A<3>        |   -2.891(F)|    5.045(F)|Out1_not0001      |   0.000|
+            |   -3.435(F)|    5.541(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.630(F)|    3.723(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.549(F)|    3.623(F)|Out4_cmp_eq0000   |   0.000|
+A<4>        |   -0.592(F)|    3.182(F)|Out1_not0001      |   0.000|
+            |   -2.913(F)|    5.158(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.434(F)|    3.477(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.901(F)|    4.062(F)|Out4_cmp_eq0000   |   0.000|
+A<5>        |   -0.753(F)|    3.263(F)|Out1_not0001      |   0.000|
+            |   -3.382(F)|    5.478(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.463(F)|    3.514(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.931(F)|    4.100(F)|Out4_cmp_eq0000   |   0.000|
+A<6>        |    0.028(F)|    2.633(F)|Out1_not0001      |   0.000|
+            |   -3.510(F)|    5.642(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.501(F)|    3.562(F)|Out3_cmp_eq0000   |   0.000|
+            |   -0.973(F)|    4.153(F)|Out4_cmp_eq0000   |   0.000|
+A<7>        |   -0.778(F)|    3.336(F)|Out1_not0001      |   0.000|
+            |   -0.781(F)|    3.912(F)|Out2_cmp_eq0000   |   0.000|
+            |   -0.588(F)|    3.671(F)|Out3_cmp_eq0000   |   0.000|
+            |   -1.004(F)|    3.893(F)|Out4_cmp_eq0000   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock S<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Out1<0>     |    9.693(F)|Out1_not0001      |   0.000|
+Out1<1>     |    9.616(F)|Out1_not0001      |   0.000|
+Out1<2>     |    9.749(F)|Out1_not0001      |   0.000|
+Out1<3>     |    9.839(F)|Out1_not0001      |   0.000|
+Out1<4>     |    9.769(F)|Out1_not0001      |   0.000|
+Out1<5>     |    9.637(F)|Out1_not0001      |   0.000|
+Out1<6>     |    9.623(F)|Out1_not0001      |   0.000|
+Out1<7>     |    9.784(F)|Out1_not0001      |   0.000|
+Out2<0>     |    9.884(F)|Out2_cmp_eq0000   |   0.000|
+Out2<1>     |    9.878(F)|Out2_cmp_eq0000   |   0.000|
+Out2<2>     |   10.049(F)|Out2_cmp_eq0000   |   0.000|
+Out2<3>     |    9.936(F)|Out2_cmp_eq0000   |   0.000|
+Out2<4>     |   10.032(F)|Out2_cmp_eq0000   |   0.000|
+Out2<5>     |    9.878(F)|Out2_cmp_eq0000   |   0.000|
+Out2<6>     |   10.049(F)|Out2_cmp_eq0000   |   0.000|
+Out2<7>     |   12.027(F)|Out2_cmp_eq0000   |   0.000|
+Out3<0>     |   13.375(F)|Out3_cmp_eq0000   |   0.000|
+Out3<1>     |   12.979(F)|Out3_cmp_eq0000   |   0.000|
+Out3<2>     |   10.953(F)|Out3_cmp_eq0000   |   0.000|
+Out3<3>     |   12.088(F)|Out3_cmp_eq0000   |   0.000|
+Out3<4>     |   10.879(F)|Out3_cmp_eq0000   |   0.000|
+Out3<5>     |   13.027(F)|Out3_cmp_eq0000   |   0.000|
+Out3<6>     |   13.492(F)|Out3_cmp_eq0000   |   0.000|
+Out3<7>     |   11.073(F)|Out3_cmp_eq0000   |   0.000|
+Out4<0>     |   12.790(F)|Out4_cmp_eq0000   |   0.000|
+Out4<1>     |   12.519(F)|Out4_cmp_eq0000   |   0.000|
+Out4<2>     |   13.331(F)|Out4_cmp_eq0000   |   0.000|
+Out4<3>     |   12.109(F)|Out4_cmp_eq0000   |   0.000|
+Out4<4>     |   11.833(F)|Out4_cmp_eq0000   |   0.000|
+Out4<5>     |   12.162(F)|Out4_cmp_eq0000   |   0.000|
+Out4<6>     |   13.339(F)|Out4_cmp_eq0000   |   0.000|
+Out4<7>     |   11.208(F)|Out4_cmp_eq0000   |   0.000|
+------------+------------+------------------+--------+
+
+Clock S<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Out1<0>     |   10.202(F)|Out1_not0001      |   0.000|
+Out1<1>     |   10.125(F)|Out1_not0001      |   0.000|
+Out1<2>     |   10.258(F)|Out1_not0001      |   0.000|
+Out1<3>     |   10.348(F)|Out1_not0001      |   0.000|
+Out1<4>     |   10.278(F)|Out1_not0001      |   0.000|
+Out1<5>     |   10.146(F)|Out1_not0001      |   0.000|
+Out1<6>     |   10.132(F)|Out1_not0001      |   0.000|
+Out1<7>     |   10.293(F)|Out1_not0001      |   0.000|
+Out2<0>     |   10.463(F)|Out2_cmp_eq0000   |   0.000|
+Out2<1>     |   10.457(F)|Out2_cmp_eq0000   |   0.000|
+Out2<2>     |   10.628(F)|Out2_cmp_eq0000   |   0.000|
+Out2<3>     |   10.515(F)|Out2_cmp_eq0000   |   0.000|
+Out2<4>     |   10.611(F)|Out2_cmp_eq0000   |   0.000|
+Out2<5>     |   10.457(F)|Out2_cmp_eq0000   |   0.000|
+Out2<6>     |   10.628(F)|Out2_cmp_eq0000   |   0.000|
+Out2<7>     |   12.606(F)|Out2_cmp_eq0000   |   0.000|
+Out3<0>     |   13.879(F)|Out3_cmp_eq0000   |   0.000|
+Out3<1>     |   13.483(F)|Out3_cmp_eq0000   |   0.000|
+Out3<2>     |   11.457(F)|Out3_cmp_eq0000   |   0.000|
+Out3<3>     |   12.592(F)|Out3_cmp_eq0000   |   0.000|
+Out3<4>     |   11.383(F)|Out3_cmp_eq0000   |   0.000|
+Out3<5>     |   13.531(F)|Out3_cmp_eq0000   |   0.000|
+Out3<6>     |   13.996(F)|Out3_cmp_eq0000   |   0.000|
+Out3<7>     |   11.577(F)|Out3_cmp_eq0000   |   0.000|
+Out4<0>     |   13.264(F)|Out4_cmp_eq0000   |   0.000|
+Out4<1>     |   12.993(F)|Out4_cmp_eq0000   |   0.000|
+Out4<2>     |   13.805(F)|Out4_cmp_eq0000   |   0.000|
+Out4<3>     |   12.583(F)|Out4_cmp_eq0000   |   0.000|
+Out4<4>     |   12.307(F)|Out4_cmp_eq0000   |   0.000|
+Out4<5>     |   12.636(F)|Out4_cmp_eq0000   |   0.000|
+Out4<6>     |   13.813(F)|Out4_cmp_eq0000   |   0.000|
+Out4<7>     |   11.682(F)|Out4_cmp_eq0000   |   0.000|
+------------+------------+------------------+--------+
+
+
+Analysis completed Tue May 22 23:47:37 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 159 MB
+
+
+

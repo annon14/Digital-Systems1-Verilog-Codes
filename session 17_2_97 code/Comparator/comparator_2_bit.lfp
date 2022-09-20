@@ -1,0 +1,5 @@
+# begin LFP file D:\Homeworks\FPGA_codes\Comoarator\comparator_2_bit.lfp
+designfile comparator_2_bit.v
+parttype xc95288xl-tq144-6
+bus_delimiter 0;
+set_busdelim_onsave 1;

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Pri_encoder.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Pri_encoder.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Pri_encoder.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="Pri_encoder.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="Pri_encoder.jed"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="Pri_encoder.lfp"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Pri_encoder.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="Pri_encoder.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="Pri_encoder.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Pri_encoder.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Pri_encoder.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Pri_encoder.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Pri_encoder.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="Pri_encoder.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Pri_encoder.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Pri_encoder.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Pri_encoder.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Pri_encoder.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Pri_encoder.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Pri_encoder.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Pri_encoder.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Pri_encoder.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Pri_encoder.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Pri_encoder_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Pri_encoder_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Pri_encoder_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Pri_encoder_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Pri_encoder_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Pri_encoder_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Pri_encoder_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1488964619" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1488964619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488964619" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1951605383812223503" xil_pn:start_ts="1488964619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488966265" xil_pn:in_ck="-8215619498780931346" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-4317766031536320341" xil_pn:start_ts="1488966256">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Pri_encoder.lso"/>
+      <outfile xil_pn:name="Pri_encoder.ngc"/>
+      <outfile xil_pn:name="Pri_encoder.ngr"/>
+      <outfile xil_pn:name="Pri_encoder.prj"/>
+      <outfile xil_pn:name="Pri_encoder.stx"/>
+      <outfile xil_pn:name="Pri_encoder.syr"/>
+      <outfile xil_pn:name="Pri_encoder.xst"/>
+      <outfile xil_pn:name="Pri_encoder_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1488966498" xil_pn:in_ck="-138758423301699754" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5859234173667599284" xil_pn:start_ts="1488966498">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488966506" xil_pn:in_ck="-1869019945567940762" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-4251716299155370538" xil_pn:start_ts="1488966498">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Pri_encoder.bld"/>
+      <outfile xil_pn:name="Pri_encoder.ngd"/>
+      <outfile xil_pn:name="Pri_encoder_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1488966515" xil_pn:in_ck="-138758423301707247" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="4618039290510578361" xil_pn:start_ts="1488966506">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Pri_encoder.gyd"/>
+      <outfile xil_pn:name="Pri_encoder.mfd"/>
+      <outfile xil_pn:name="Pri_encoder.nga"/>
+      <outfile xil_pn:name="Pri_encoder.pad"/>
+      <outfile xil_pn:name="Pri_encoder.pnx"/>
+      <outfile xil_pn:name="Pri_encoder.rpt"/>
+      <outfile xil_pn:name="Pri_encoder.tim"/>
+      <outfile xil_pn:name="Pri_encoder.tspec"/>
+      <outfile xil_pn:name="Pri_encoder.vm6"/>
+      <outfile xil_pn:name="Pri_encoder.xml"/>
+      <outfile xil_pn:name="Pri_encoder_build.xml"/>
+      <outfile xil_pn:name="Pri_encoder_html"/>
+      <outfile xil_pn:name="Pri_encoder_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1488966517" xil_pn:in_ck="-138758423301698383" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1488966515">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Pri_encoder.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1488966528" xil_pn:in_ck="-138758423301711669" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="-3598488201878296819" xil_pn:start_ts="1488966528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488965712" xil_pn:in_ck="-138758423301698383" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1488965710">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

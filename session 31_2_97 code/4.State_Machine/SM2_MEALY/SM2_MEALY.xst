@@ -1,0 +1,5 @@
+set -tmpdir "D:/Homeworks/FPGA_codes/D_FF/SM2_MEALY/xst/projnav.tmp"
+set -xsthdpdir "D:/Homeworks/FPGA_codes/D_FF/SM2_MEALY/xst"
+elaborate
+-ifn SM2_MEALY.prj
+-ifmt mixed

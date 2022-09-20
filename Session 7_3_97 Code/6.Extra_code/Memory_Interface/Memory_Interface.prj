@@ -1,0 +1,3 @@
+verilog work "Memory_Interface_Datapath.v"
+verilog work "Memory_Interface_Controller.v"
+verilog work "Memory_Interface.v"

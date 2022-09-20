@@ -1,0 +1,18 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF_tb_isim_beh.exe -prj D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF_tb_beh.prj work.T_FF_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF.v" into library work
+Analyzing Verilog file "D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF_tb.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module T_FF
+Compiling module T_FF_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF_tb_isim_beh.exe
+Fuse Memory Usage: 25712 KB
+Fuse CPU Usage: 468 ms

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_0</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_0.
+The site IFF2 contains register Out3_0.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_0</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_0.
+The site IFF2 contains register Out3_0.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_1</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_1.
+The site IFF2 contains register Out3_1.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_1</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_1.
+The site IFF2 contains register Out3_1.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_2</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_2.
+The site IFF2 contains register Out3_2.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_2</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_2.
+The site IFF2 contains register Out3_2.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_3</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_3.
+The site IFF2 contains register Out3_3.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_3</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_3.
+The site IFF2 contains register Out3_3.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_4</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_4.
+The site IFF2 contains register Out3_4.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_4</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_4.
+The site IFF2 contains register Out3_4.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_5</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_5.
+The site IFF2 contains register Out3_5.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_5</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_5.
+The site IFF2 contains register Out3_5.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out2_6</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_6.
+The site IFF2 contains register Out3_6.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_6</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out4_6.
+The site IFF2 contains register Out3_6.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">Out1_7</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The site IFF1 contains register Out3_7.
+The site IFF2 contains register Out2_7.</arg>
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">Out4_cmp_eq0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">Out1_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">Out3_cmp_eq0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">Out2_cmp_eq0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+</messages>
+

@@ -1,0 +1,5 @@
+# begin LFP file D:\Homeworks\FPGA_codes\Pri_encoder\Pri_encoder\Pri_encoder.lfp
+designfile Pri_encoder.v
+parttype xc95288xl-tq144-6
+bus_delimiter 0;
+set_busdelim_onsave 1;

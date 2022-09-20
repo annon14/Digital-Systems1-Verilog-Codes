@@ -1,0 +1,1 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/D_FF/SM2_MEALY/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/D_FF/SM2_MEALY/SM2_MEALY.xst" -ofn "D:/Homeworks/FPGA_codes/D_FF/SM2_MEALY/SM2_MEALY.syr" 

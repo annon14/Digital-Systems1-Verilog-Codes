@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Adder_sub.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Adder_sub_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Adder_sub_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Adder_sub_TB_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Adder_sub_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="adder_sub.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="adder_sub.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="adder_sub.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="adder_sub.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="adder_sub.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="adder_sub.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="adder_sub.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="adder_sub.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="adder_sub.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="adder_sub.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="adder_sub.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="adder_sub.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="adder_sub.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adder_sub.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="adder_sub.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="adder_sub.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="adder_sub.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="adder_sub.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="adder_sub.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="adder_sub.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="adder_sub.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="adder_sub.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="adder_sub.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="adder_sub_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="adder_sub_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="adder_sub_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="adder_sub_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="adder_sub_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="adder_sub_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder_sub_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder_sub_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="adder_sub_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="adder_sub_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder_sub_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="adder_sub_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="adder_sub_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="adder_sub_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adder_sub_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1525624259" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1525624259">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681832" xil_pn:in_ck="2773771653811398735" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1525681832">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Adder_sub_TB.v"/>
+      <outfile xil_pn:name="adder_sub.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1525625625" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5761409503702815723" xil_pn:start_ts="1525625625">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525625625" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-767400557157141043" xil_pn:start_ts="1525625625">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525625625" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="348746719495868245" xil_pn:start_ts="1525625625">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681835" xil_pn:in_ck="2773771653811398735" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1525681835">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Adder_sub_TB.v"/>
+      <outfile xil_pn:name="adder_sub.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681838" xil_pn:in_ck="2773771653811398735" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5731021751496962886" xil_pn:start_ts="1525681835">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Adder_sub_TB_beh.prj"/>
+      <outfile xil_pn:name="Adder_sub_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681838" xil_pn:in_ck="-8362597006039134835" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5246896811710611575" xil_pn:start_ts="1525681838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Adder_sub_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7634720008794401048" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="348746719495868245" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="933150381746794336" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1110319057739476154" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623700" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-9095236042261269729" xil_pn:start_ts="1525623700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681669" xil_pn:in_ck="153349406421316333" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="9105560845566221333" xil_pn:start_ts="1525681661">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Adder_sub_TB_beh.prj"/>
+      <outfile xil_pn:name="Adder_sub_TB_stx_beh.prj"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="adder_sub.lso"/>
+      <outfile xil_pn:name="adder_sub.ngc"/>
+      <outfile xil_pn:name="adder_sub.ngr"/>
+      <outfile xil_pn:name="adder_sub.prj"/>
+      <outfile xil_pn:name="adder_sub.stx"/>
+      <outfile xil_pn:name="adder_sub.syr"/>
+      <outfile xil_pn:name="adder_sub.xst"/>
+      <outfile xil_pn:name="adder_sub_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623797" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119214201247645685" xil_pn:start_ts="1525623797">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681676" xil_pn:in_ck="976806929427516879" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2918652071893533171" xil_pn:start_ts="1525681671">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="adder_sub.bld"/>
+      <outfile xil_pn:name="adder_sub.ngd"/>
+      <outfile xil_pn:name="adder_sub_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681680" xil_pn:in_ck="976806929427516880" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-7838350600853486723" xil_pn:start_ts="1525681676">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="adder_sub.pcf"/>
+      <outfile xil_pn:name="adder_sub_map.map"/>
+      <outfile xil_pn:name="adder_sub_map.mrp"/>
+      <outfile xil_pn:name="adder_sub_map.ncd"/>
+      <outfile xil_pn:name="adder_sub_map.ngm"/>
+      <outfile xil_pn:name="adder_sub_map.xrpt"/>
+      <outfile xil_pn:name="adder_sub_summary.xml"/>
+      <outfile xil_pn:name="adder_sub_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681688" xil_pn:in_ck="-2783785115383102231" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1525681680">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="adder_sub.ncd"/>
+      <outfile xil_pn:name="adder_sub.pad"/>
+      <outfile xil_pn:name="adder_sub.par"/>
+      <outfile xil_pn:name="adder_sub.ptwx"/>
+      <outfile xil_pn:name="adder_sub.unroutes"/>
+      <outfile xil_pn:name="adder_sub.xpi"/>
+      <outfile xil_pn:name="adder_sub_pad.csv"/>
+      <outfile xil_pn:name="adder_sub_pad.txt"/>
+      <outfile xil_pn:name="adder_sub_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623836" xil_pn:in_ck="976806929427516748" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="4026351017656627060" xil_pn:start_ts="1525623830">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="adder_sub.bgn"/>
+      <outfile xil_pn:name="adder_sub.bit"/>
+      <outfile xil_pn:name="adder_sub.drc"/>
+      <outfile xil_pn:name="adder_sub.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1525623851" xil_pn:in_ck="976806929427503894" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1525623849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1525681688" xil_pn:in_ck="976806929427516748" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1525681685">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="adder_sub.twr"/>
+      <outfile xil_pn:name="adder_sub.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

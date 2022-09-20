@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/RAM_IPCore.v"
+verilog work "RAM_IP_Core.v"

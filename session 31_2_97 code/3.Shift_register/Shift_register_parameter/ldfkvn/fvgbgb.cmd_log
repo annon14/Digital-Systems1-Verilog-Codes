@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "fvgbgb.ngc" fvgbgb.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o fvgbgb_map.ncd fvgbgb.ngd fvgbgb.pcf 
+par -w -intstyle ise -ol high -t 1 fvgbgb_map.ncd fvgbgb.ncd fvgbgb.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml fvgbgb.twx fvgbgb.ncd -o fvgbgb.twr fvgbgb.pcf 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/31-2-97_session code/3.Shift_register/Shift_register_parameter/ldfkvn/fvgbgb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "fvgbgb.ngc" fvgbgb.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o fvgbgb_map.ncd fvgbgb.ngd fvgbgb.pcf 
+par -w -intstyle ise -ol high -t 1 fvgbgb_map.ncd fvgbgb.ncd fvgbgb.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml fvgbgb.twx fvgbgb.ncd -o fvgbgb.twr fvgbgb.pcf 

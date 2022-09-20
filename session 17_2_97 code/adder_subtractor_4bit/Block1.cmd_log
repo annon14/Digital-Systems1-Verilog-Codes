@@ -1,0 +1,5 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/Block1.xst" -ofn "D:/Homeworks/FPGA_codes/adder_subtractor_4bit/Block1.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -i -p xc9572-PC44-7 Block1.ngc Block1.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk Block1.ngd 
+tsim -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -intstyle ise Block1 Block1.nga 
+hprep6 -filter D:/Homeworks/FPGA_codes/adder_subtractor_4bit/iseconfig/filter.filter -s IEEE1149 -n Block1 -i Block1 

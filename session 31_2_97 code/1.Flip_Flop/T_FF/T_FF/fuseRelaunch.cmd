@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF_tb_isim_beh.exe" -prj "D:/Homeworks/FPGA_codes/T_FF/T_FF/T_FF_tb_beh.prj" "work.T_FF_tb" "work.glbl" 

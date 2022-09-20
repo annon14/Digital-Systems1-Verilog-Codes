@@ -1,0 +1,542 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: Memory_Interface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Memory_Interface.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Memory_Interface"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-tq144
+
+---- Source Options
+Top Module Name                    : Memory_Interface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Memory_Interface_Datapath.v" in library work
+Compiling verilog file "Memory_Interface_Controller.v" in library work
+Module <Memory_Interface_Datapath> compiled
+Compiling verilog file "Memory_Interface.v" in library work
+Module <Memory_Interface_Controller> compiled
+Module <Memory_Interface> compiled
+No errors in compilation
+Analysis of file <"Memory_Interface.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Memory_Interface> in library <work>.
+
+Analyzing hierarchy for module <Memory_Interface_Controller> in library <work> with parameters.
+	deliverdata = "101"
+	getbus = "010"
+	getdata = "001"
+	onebyte = "100"
+	readmem = "011"
+	waiting = "000"
+
+Analyzing hierarchy for module <Memory_Interface_Datapath> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Memory_Interface>.
+Module <Memory_Interface> is correct for synthesis.
+ 
+Analyzing module <Memory_Interface_Controller> in library <work>.
+	deliverdata = 3'b101
+	getbus = 3'b010
+	getdata = 3'b001
+	onebyte = 3'b100
+	readmem = 3'b011
+	waiting = 3'b000
+Module <Memory_Interface_Controller> is correct for synthesis.
+ 
+Analyzing module <Memory_Interface_Datapath> in library <work>.
+WARNING:Xst:905 - "Memory_Interface_Datapath.v" line 49: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <counter2>
+Module <Memory_Interface_Datapath> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Memory_Interface_Controller>.
+    Related source file is "Memory_Interface_Controller.v".
+    Found finite state machine <FSM_0> for signal <PS>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Memory_Interface_Controller> synthesized.
+
+
+Synthesizing Unit <Memory_Interface_Datapath>.
+    Related source file is "Memory_Interface_Datapath.v".
+WARNING:Xst:647 - Input <ldden> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <coc2>.
+    Found 16-bit register for signal <addreg16>.
+    Found 2-bit adder carry out for signal <AUX_1$addsub0000>.
+    Found 2-bit register for signal <counter2>.
+    Found 8-bit register for signal <datareg0>.
+    Found 8-bit register for signal <datareg1>.
+    Found 8-bit register for signal <datareg2>.
+    Found 8-bit register for signal <datareg3>.
+    Summary:
+	inferred  51 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Memory_Interface_Datapath> synthesized.
+
+
+Synthesizing Unit <Memory_Interface>.
+    Related source file is "Memory_Interface.v".
+WARNING:Xst:647 - Input <memready8> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addrbus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <memready> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <lden> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <addrbus16> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Memory_Interface> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder carry out                                 : 1
+# Registers                                            : 7
+ 1-bit register                                        : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 8-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <MI_CU/PS/FSM> on signal <PS[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 001   | 000010
+ 010   | 000100
+ 011   | 001000
+ 100   | 010000
+ 101   | 100000
+-------------------
+WARNING:Xst:1710 - FF/Latch <datareg1_5> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_6> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_7> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_0> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_1> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_2> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_3> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_4> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_5> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_6> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg2_7> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_0> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_1> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_2> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_3> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_4> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_5> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_6> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg3_7> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counter2_0> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counter2_1> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <coc2> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FFd1> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FFd2> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_0> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_1> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_2> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_3> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_4> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_5> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_6> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_7> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_8> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_9> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_10> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_11> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_12> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_13> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_14> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_15> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_0> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_1> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_2> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_3> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datareg1_4> (without init value) has a constant value of 0 in block <MI_DU>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 2-bit adder carry out                                 : 1
+# Registers                                            : 51
+ Flip-Flops                                            : 51
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <addreg16_0> in Unit <Memory_Interface_Datapath> is equivalent to the following 15 FFs/Latches, which will be removed : <addreg16_1> <addreg16_2> <addreg16_3> <addreg16_4> <addreg16_5> <addreg16_6> <addreg16_7> <addreg16_8> <addreg16_9> <addreg16_10> <addreg16_11> <addreg16_12> <addreg16_13> <addreg16_14> <addreg16_15> 
+WARNING:Xst:1710 - FF/Latch <FSM_FFd2> (without init value) has a constant value of 0 in block <FSM_0-parent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FSM_FFd1> (without init value) has a constant value of 0 in block <FSM_0-parent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addreg16_0> (without init value) has a constant value of 0 in block <Memory_Interface_Datapath>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Memory_Interface> ...
+
+Optimizing unit <Memory_Interface_Datapath> ...
+WARNING:Xst:1710 - FF/Latch <MI_DU/datareg1_0> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_1> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_2> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_3> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_4> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_5> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_6> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg1_7> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_0> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_1> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_2> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_3> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_4> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_5> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_6> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg2_7> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_0> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_1> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_2> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_3> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_4> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_5> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_6> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/datareg3_7> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/counter2_0> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MI_DU/counter2_1> (without init value) has a constant value of 0 in block <Memory_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <MI_DU/coc2> of sequential type is unconnected in block <Memory_Interface>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Memory_Interface, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Memory_Interface.ngr
+Top Level Output File Name         : Memory_Interface
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 82
+
+Cell Usage :
+# BELS                             : 6
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 12
+#      FDC                         : 3
+#      FDCE                        : 8
+#      FDPE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 64
+#      IBUF                        : 11
+#      OBUF                        : 53
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50tq144-5 
+
+ Number of Slices:                        2  out of    768     0%  
+ Number of Slice Flip Flops:              4  out of   1536     0%  
+ Number of 4 input LUTs:                  4  out of   1536     0%  
+ Number of IOs:                          82
+ Number of bonded IOBs:                  65  out of     97    67%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 12    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 12    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.196ns (Maximum Frequency: 455.280MHz)
+   Minimum input arrival time before clock: 2.436ns
+   Maximum output required time after clock: 7.735ns
+   Maximum combinational path delay: 7.614ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.196ns (frequency: 455.280MHz)
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Delay:               2.196ns (Levels of Logic = 1)
+  Source:            MI_CU/PS_FSM_FFd3 (FF)
+  Destination:       MI_CU/PS_FSM_FFd3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MI_CU/PS_FSM_FFd3 to MI_CU/PS_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.915  MI_CU/PS_FSM_FFd3 (MI_CU/PS_FSM_FFd3)
+     LUT3:I1->O            1   0.479   0.000  MI_CU/PS_FSM_FFd3-In1 (MI_CU/PS_FSM_FFd3-In)
+     FDC:D                     0.176          MI_CU/PS_FSM_FFd3
+    ----------------------------------------
+    Total                      2.196ns (1.281ns logic, 0.915ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              2.436ns (Levels of Logic = 2)
+  Source:            grant (PAD)
+  Destination:       MI_CU/PS_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: grant to MI_CU/PS_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.715   1.066  grant_IBUF (grant_IBUF)
+     LUT3:I0->O            1   0.479   0.000  MI_CU/PS_FSM_FFd4-In1 (MI_CU/PS_FSM_FFd4-In)
+     FDC:D                     0.176          MI_CU/PS_FSM_FFd4
+    ----------------------------------------
+    Total                      2.436ns (1.370ns logic, 1.066ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 9
+-------------------------------------------------------------------------
+Offset:              7.735ns (Levels of Logic = 2)
+  Source:            MI_CU/PS_FSM_FFd3 (FF)
+  Destination:       request (PAD)
+  Source Clock:      clk rising
+
+  Data Path: MI_CU/PS_FSM_FFd3 to request
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  MI_CU/PS_FSM_FFd3 (MI_CU/PS_FSM_FFd3)
+     LUT3:I0->O            1   0.479   0.681  MI_CU/request1 (request_OBUF)
+     OBUF:I->O                 4.909          request_OBUF (request)
+    ----------------------------------------
+    Total                      7.735ns (6.014ns logic, 1.721ns route)
+                                       (77.7% logic, 22.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.614ns (Levels of Logic = 3)
+  Source:            grant (PAD)
+  Destination:       request (PAD)
+
+  Data Path: grant to request
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.715   0.830  grant_IBUF (grant_IBUF)
+     LUT3:I2->O            1   0.479   0.681  MI_CU/request1 (request_OBUF)
+     OBUF:I->O                 4.909          request_OBUF (request)
+    ----------------------------------------
+    Total                      7.614ns (6.103ns logic, 1.511ns route)
+                                       (80.2% logic, 19.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.19 secs
+ 
+--> 
+
+Total memory usage is 306340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   83 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

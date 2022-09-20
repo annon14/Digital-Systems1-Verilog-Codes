@@ -1,0 +1,18 @@
+MDF Database:  version 1.0
+MDF_INFO | T_FF | XC95288XL-6-TQ144
+MACROCELL | 1 | 1 | Q_OBUF
+ATTRIBUTES | 8815362 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 3 | Q  | SR  | T
+INPUTMC | 1 | 1 | 1
+INPUTP | 2 | 21 | 225
+EQ | 3 | 
+   Q.D = Q & !SR & T
+	# !Q & !SR & !T;
+   Q.CLK = Clk;	// GCK
+GLOBALS | 1 | 2 | Clk
+
+PIN | Clk | 4096 | 0 | N/A | 57 | 1 | 1 | 1
+PIN | SR | 64 | 0 | N/A | 21 | 1 | 1 | 1
+PIN | T | 64 | 0 | N/A | 225 | 1 | 1 | 1
+PIN | Q | 536871040 | 0 | N/A | 20

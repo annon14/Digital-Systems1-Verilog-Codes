@@ -1,0 +1,3 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/D_FF/state_machin/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/D_FF/state_machin/state_machine.xst" -ofn "D:/Homeworks/FPGA_codes/D_FF/state_machin/state_machine.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/D_FF/state_machin/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/D_FF/state_machin/state_machine.xst" -ofn "D:/Homeworks/FPGA_codes/D_FF/state_machin/state_machine.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/D_FF/state_machin/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/D_FF/state_machin/state_machine.xst" -ofn "D:/Homeworks/FPGA_codes/D_FF/state_machin/state_machine.syr" 

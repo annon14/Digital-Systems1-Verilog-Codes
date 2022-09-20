@@ -1,0 +1,34 @@
+Pin Freeze File:  version P.20131013
+
+95288XL144 XC95288XL-6-TQ144
+enable S:PIN120
+encoder_in<0> S:PIN105
+encoder_in<1> S:PIN103
+encoder_in<2> S:PIN100
+encoder_in<3> S:PIN97
+binary_out<0> S:PIN80
+binary_out<1> S:PIN78
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_18 $OpTx$INV$8__$INT
+
+
+
+
+
+
+
+
+
+
+
+PARTITION FB13_17 binary_out_1_OBUFE
+
+
+PARTITION FB15_3 binary_out_0_OBUFE
+
+
+

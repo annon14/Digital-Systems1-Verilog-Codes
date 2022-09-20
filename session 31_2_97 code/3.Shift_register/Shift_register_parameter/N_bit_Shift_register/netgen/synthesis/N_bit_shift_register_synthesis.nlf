@@ -1,0 +1,22 @@
+Release 14.7 - netgen P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -filter
+D:/Homeworks/FPGA_codes/Shift_register_parameter/N_bit_Shift_register/iseconfig/
+filter.filter -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt
+verilog -sim N_bit_shift_register.ngc N_bit_shift_register_synthesis.v  
+
+Reading design 'N_bit_shift_register.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file
+'D:\Homeworks\FPGA_codes\Shift_register_parameter\N_bit_Shift_register\netgen\sy
+nthesis\N_bit_shift_register_synthesis.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 128092 kilobytes

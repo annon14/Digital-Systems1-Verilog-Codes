@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/17_2_97 session code/Pri_encoder/Pri_encoder.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/17_2_97 session code/Pri_encoder/Pri_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "Pri_encoder.ngc" Pri_encoder.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o Pri_encoder_map.ncd Pri_encoder.ngd Pri_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 Pri_encoder_map.ncd Pri_encoder.ncd Pri_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Pri_encoder.twx Pri_encoder.ncd -o Pri_encoder.twr Pri_encoder.pcf 
+xst -intstyle ise -ifn "C:/Users/Saeid/Desktop/Digital_system1/17_2_97 session code/Pri_encoder/Pri_encoder.xst" -ofn "C:/Users/Saeid/Desktop/Digital_system1/17_2_97 session code/Pri_encoder/Pri_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "Pri_encoder.ngc" Pri_encoder.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o Pri_encoder_map.ncd Pri_encoder.ngd Pri_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 Pri_encoder_map.ncd Pri_encoder.ncd Pri_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Pri_encoder.twx Pri_encoder.ncd -o Pri_encoder.twr Pri_encoder.pcf 

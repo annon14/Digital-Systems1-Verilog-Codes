@@ -1,0 +1,57 @@
+MDF Database:  version 1.0
+MDF_INFO | counter | XC95288XL-6-TQ144
+MACROCELL | 14 | 1 | out_0
+ATTRIBUTES | 8815362 | 0
+OUTPUTMC | 4 | 14 | 1 | 1 | 1 | 9 | 1 | 8 | 1
+INPUTS | 2 | out<0>  | reset
+INPUTMC | 1 | 14 | 1
+INPUTP | 1 | 4
+EQ | 2 | 
+   out<0>.D = !out<0> & !reset;
+   out<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 1 | out_1
+ATTRIBUTES | 8815362 | 0
+OUTPUTMC | 3 | 1 | 1 | 9 | 1 | 8 | 1
+INPUTS | 5 | out<0>  | out<1>  | reset  | out<2>  | out<3>
+INPUTMC | 4 | 14 | 1 | 1 | 1 | 9 | 1 | 8 | 1
+INPUTP | 1 | 4
+EQ | 4 | 
+   out<1>.D = !out<0> & out<1> & !reset
+	# out<0> & !out<1> & out<2> & !reset
+	# out<0> & !out<1> & !out<3> & !reset;
+   out<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 9 | 1 | out_2
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 3 | 1 | 1 | 9 | 1 | 8 | 1
+INPUTS | 4 | out<0>  | out<1>  | reset  | out<2>
+INPUTMC | 3 | 14 | 1 | 1 | 1 | 9 | 1
+INPUTP | 1 | 4
+EQ | 3 | 
+   out<2>.T = out<2> & reset
+	# out<0> & out<1> & !reset;
+   out<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 8 | 1 | out_3
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 2 | 1 | 1 | 8 | 1
+INPUTS | 5 | out<0>  | out<1>  | out<2>  | reset  | out<3>
+INPUTMC | 4 | 14 | 1 | 1 | 1 | 9 | 1 | 8 | 1
+INPUTP | 1 | 4
+EQ | 4 | 
+   out<3>.T = out<3> & reset
+	# out<0> & out<1> & out<2> & !reset
+	# out<0> & !out<1> & !out<2> & out<3>;
+   out<3>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+PIN | clk | 4096 | 0 | N/A | 57 | 4 | 14 | 1 | 1 | 1 | 9 | 1 | 8 | 1
+PIN | reset | 64 | 0 | N/A | 4 | 4 | 14 | 1 | 1 | 1 | 9 | 1 | 8 | 1
+PIN | out<0> | 536871040 | 0 | N/A | 151
+PIN | out<1> | 536871040 | 0 | N/A | 20
+PIN | out<2> | 536871040 | 0 | N/A | 216
+PIN | out<3> | 536871040 | 0 | N/A | 97

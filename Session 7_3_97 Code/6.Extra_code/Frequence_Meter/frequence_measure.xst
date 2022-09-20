@@ -1,0 +1,5 @@
+set -tmpdir "D:/Homeworks/FPGA_codes/Frequence_Meter/xst/projnav.tmp"
+set -xsthdpdir "D:/Homeworks/FPGA_codes/Frequence_Meter/xst"
+elaborate
+-ifn frequence_measure.prj
+-ifmt mixed

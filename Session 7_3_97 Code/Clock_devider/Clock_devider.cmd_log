@@ -1,0 +1,7 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Clock_devider/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.xst" -ofn "D:/Homeworks/FPGA_codes/Clock_devider/Clock_devider.syr" 

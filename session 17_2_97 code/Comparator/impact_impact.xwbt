@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\Homeworks\FPGA_codes\Comoarator\impact.xsl
+OUTFILE=D:\Homeworks\FPGA_codes\Comoarator\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\Homeworks\FPGA_codes\Comoarator
+LICENSE=iMPACT
+USER_INFO=iMPACT

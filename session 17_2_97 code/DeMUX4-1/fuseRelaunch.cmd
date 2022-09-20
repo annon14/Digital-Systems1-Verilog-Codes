@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Saeid/Desktop/Digital_system1/17_2_97 session code/DeMUX4-1/DeMUX4_1_tb_isim_beh.exe" -prj "C:/Users/Saeid/Desktop/Digital_system1/17_2_97 session code/DeMUX4-1/DeMUX4_1_tb_beh.prj" "work.DeMUX4_1_tb" "work.glbl" 

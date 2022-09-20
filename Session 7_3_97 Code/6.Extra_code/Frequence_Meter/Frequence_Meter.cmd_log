@@ -1,0 +1,5 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Frequence_Meter/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Frequence_Meter/Frequence_Meter.xst" -ofn "D:/Homeworks/FPGA_codes/Frequence_Meter/Frequence_Meter.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 Frequence_Meter.ngc Frequence_Meter.ngd  
+map -filter "D:/Homeworks/FPGA_codes/Frequence_Meter/iseconfig/filter.filter" -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o Frequence_Meter_map.ncd Frequence_Meter.ngd Frequence_Meter.pcf 
+par -filter "D:/Homeworks/FPGA_codes/Frequence_Meter/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 Frequence_Meter_map.ncd Frequence_Meter.ncd Frequence_Meter.pcf 
+trce -filter D:/Homeworks/FPGA_codes/Frequence_Meter/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Frequence_Meter.twx Frequence_Meter.ncd -o Frequence_Meter.twr Frequence_Meter.pcf 

@@ -1,0 +1,11 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_IP_Core.xst" -ofn "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_IP_Core.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s200-pq208-5 RAM_IP_Core.ngc RAM_IP_Core.ngd  
+map -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o RAM_IP_Core_map.ncd RAM_IP_Core.ngd RAM_IP_Core.pcf 
+par -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 RAM_IP_Core_map.ncd RAM_IP_Core.ncd RAM_IP_Core.pcf 
+trce -filter D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml RAM_IP_Core.twx RAM_IP_Core.ncd -o RAM_IP_Core.twr RAM_IP_Core.pcf 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_IP_Core.xst" -ofn "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_IP_Core.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s200-pq208-5 RAM_IP_Core.ngc RAM_IP_Core.ngd  
+map -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o RAM_IP_Core_map.ncd RAM_IP_Core.ngd RAM_IP_Core.pcf 
+par -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 RAM_IP_Core_map.ncd RAM_IP_Core.ncd RAM_IP_Core.pcf 
+trce -filter D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml RAM_IP_Core.twx RAM_IP_Core.ncd -o RAM_IP_Core.twr RAM_IP_Core.pcf 
+netgen -filter "D:/Homeworks/FPGA_codes/Ram_IP_core/iseconfig/filter.filter" -intstyle ise -s 5  -pcf RAM_IP_Core.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim RAM_IP_Core.ncd RAM_IP_Core_timesim.v 

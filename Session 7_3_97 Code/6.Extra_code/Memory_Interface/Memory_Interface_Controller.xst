@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Saeid/Desktop/Digital_system1/7_3_97_Session Code/6.Extra_code/Memory_Interface/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Saeid/Desktop/Digital_system1/7_3_97_Session Code/6.Extra_code/Memory_Interface/xst"
+elaborate
+-ifn Memory_Interface_Controller.prj
+-ifmt mixed

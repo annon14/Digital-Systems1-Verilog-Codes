@@ -1,0 +1,5 @@
+set -tmpdir "D:/Homeworks/FPGA_codes/Clock_devider/xst/projnav.tmp"
+set -xsthdpdir "D:/Homeworks/FPGA_codes/Clock_devider/xst"
+elaborate
+-ifn Clock_devider.prj
+-ifmt mixed

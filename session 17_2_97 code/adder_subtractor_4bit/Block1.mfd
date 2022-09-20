@@ -1,0 +1,36 @@
+MDF Database:  version 1.0
+MDF_INFO | Block1 | XC9572-7-PC44
+MACROCELL | 0 | 1 | ro<0>
+ATTRIBUTES | 8815362 | 0
+INPUTS | 2 | reset  | In
+INPUTP | 2 | 89 | 9
+EQ | 2 | 
+   Out<0>.D = reset & In;
+   Out<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 1 | Madd_ro_add0000__and0000
+ATTRIBUTES | 396034 | 0
+INPUTS | 0
+EQ | 1 | 
+   Out<3> = Gnd;
+
+MACROCELL | 2 | 1 | Madd_ro_add0000__and0000$BUF0
+ATTRIBUTES | 396034 | 0
+INPUTS | 0
+EQ | 1 | 
+   Out<2> = Gnd;
+
+MACROCELL | 1 | 1 | Madd_ro_add0000__and0000$BUF1
+ATTRIBUTES | 396034 | 0
+INPUTS | 0
+EQ | 1 | 
+   Out<1> = Gnd;
+
+PIN | clk | 4096 | 0 | N/A | 20 | 1 | 0 | 1
+PIN | reset | 64 | 0 | N/A | 89 | 1 | 0 | 1
+PIN | In | 64 | 0 | N/A | 9 | 1 | 0 | 1
+PIN | Out<0> | 536871040 | 0 | N/A | 11
+PIN | Out<3> | 536871040 | 0 | N/A | 58
+PIN | Out<2> | 536871040 | 0 | N/A | 29
+PIN | Out<1> | 536871040 | 0 | N/A | 86

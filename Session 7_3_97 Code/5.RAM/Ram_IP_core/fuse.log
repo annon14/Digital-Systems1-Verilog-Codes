@@ -1,0 +1,25 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib simprims_ver -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_16_tb_isim_par.exe -prj D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_16_tb_par.prj work.RAM_16_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Homeworks/FPGA_codes/Ram_IP_core/netgen/par/RAM_IP_Core_timesim.v" into library work
+Analyzing Verilog file "D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_16_tb.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module X_IPAD
+Compiling module X_BUF
+Compiling module X_BUFGMUX(LOC="BUFGMUX0")
+Compiling module X_INV(LOC="BUFGMUX0")
+Compiling module X_OPAD
+Compiling module X_OBUF
+Compiling module X_RAMB16_S36_S36(SETUP_ALL=421,S...
+Compiling module X_ZERO
+Compiling module RAM_IP_Core
+Compiling module RAM_16_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 63 Verilog Units
+Built simulation executable D:/Homeworks/FPGA_codes/Ram_IP_core/RAM_16_tb_isim_par.exe
+Fuse Memory Usage: 33260 KB
+Fuse CPU Usage: 561 ms

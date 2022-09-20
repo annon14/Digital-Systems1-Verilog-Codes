@@ -1,0 +1,44 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Homeworks/FPGA_codes/D_FF/state_machin/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to D:/Homeworks/FPGA_codes/D_FF/state_machin/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "state_machine.v" in library work
+ERROR:HDLCompilers:28 - "state_machine.v" line 29 'Reset' has not been declared
+ERROR:HDLCompilers:26 - "state_machine.v" line 33 expecting 'end', found 'always'
+Module <state_machine> compiled
+ERROR:HDLCompilers:26 - "state_machine.v" line 33 expecting 'endmodule', found '@'
+ERROR:HDLCompilers:26 - "state_machine.v" line 33 unexpected token: ')'
+ERROR:HDLCompilers:26 - "state_machine.v" line 34 unexpected token: 'I'
+ERROR:HDLCompilers:26 - "state_machine.v" line 35 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 36 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 37 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 38 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 39 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 40 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 41 unexpected token: '1'
+ERROR:HDLCompilers:26 - "state_machine.v" line 46 expecting '*)', found 'EOF'
+ERROR:HDLCompilers:26 - "state_machine.v" line 46 unexpected token: 'EOF'
+Analysis of file <"state_machine.prj"> failed.
+--> 
+
+Total memory usage is 206220 kilobytes
+
+Number of errors   :   14 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/ip4/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/ip4/RAM.xst" -ofn "D:/Homeworks/FPGA_codes/ip4/RAM.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-tqg144-3 RAM.ngc RAM.ngd  

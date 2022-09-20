@@ -1,0 +1,30 @@
+Pin Freeze File:  version P.20131013
+
+957244 XC9572-7-PC44
+A<0> S:PIN34
+A<1> S:PIN26
+A<2> S:PIN43
+A<3> S:PIN4
+B<0> S:PIN2
+B<1> S:PIN8
+B<2> S:PIN20
+B<3> S:PIN28
+M S:PIN38
+OUT<0> S:PIN1
+OUT<1> S:PIN36
+OUT<2> S:PIN24
+OUT<3> S:PIN11
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 OUT_0_OBUF
+
+PARTITION FB2_4 EXP0_ OUT_1_OBUF EXP1_
+
+PARTITION FB3_1 EXP2_ OUT_3_OBUF EXP3_
+PARTITION FB3_17 EXP4_ $OpTx$Maddsub_L_Mxor_Result<2>__xor0000/Maddsub_L_Mxor_Result<2>__xor0000_D_INV$167
+PARTITION FB4_2 OUT_2_OBUF
+
+

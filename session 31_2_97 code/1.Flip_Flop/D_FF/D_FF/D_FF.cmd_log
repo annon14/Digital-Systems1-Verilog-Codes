@@ -1,0 +1,18 @@
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF.xst" -ofn "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -i -p xc95288xl-TQ144-6 D_FF.ngc D_FF.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -intstyle ise -p xc95288xl-6-TQ144 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper D_FF.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter D_FF_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -intstyle ise D_FF D_FF.nga 
+taengine -intstyle ise -f D_FF -w --format html1 -l D_FF_html/tim/timing_report.htm 
+hprep6 -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -s IEEE1149 -n D_FF -i D_FF 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -uc D_FF.ucf -p xc95288xl-TQ144-6 D_FF.ngc D_FF.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -intstyle ise -p xc95288xl-6-TQ144 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper D_FF.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter D_FF_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -intstyle ise D_FF D_FF.nga 
+hprep6 -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -s IEEE1149 -n D_FF -i D_FF 
+xst -intstyle ise -filter "D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter" -ifn "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF.xst" -ofn "D:/Homeworks/FPGA_codes/D_FF/D_FF/D_FF.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -uc D_FF.ucf -p xc95288xl-TQ144-6 D_FF.ngc D_FF.ngd  
+cpldfit -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -intstyle ise -p xc95288xl-6-TQ144 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper D_FF.ngd 
+XSLTProcess -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter D_FF_build.xml 
+tsim -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -intstyle ise D_FF D_FF.nga 
+hprep6 -filter D:/Homeworks/FPGA_codes/D_FF/D_FF/iseconfig/filter.filter -s IEEE1149 -n D_FF -i D_FF 
